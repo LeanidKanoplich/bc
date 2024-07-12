@@ -1,0 +1,242 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the main block */
+.main-block {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path/to/clouds-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-block h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.start-using {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+.start-using:hover {
+    background-color: #45a049;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.main-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for functionality, integration, benefits, invoicing blocks */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+section li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Styles for additional services block */
+.additional-services-block .service {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: left;
+}
+
+.additional-services-block .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the footer */
+.footer-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.newsletter-form label {
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-content p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-block h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section li {
+        font-size: 16px;
+    }
+
+    .additional-services-block .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+    }
+}
