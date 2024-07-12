@@ -49,9 +49,8 @@ nav a {
 .main-block {
     text-align: center;
     padding: 50px 20px;
-    background-image: url('path/to/clouds-background.jpg');
+    background-image: url('assets/images/clouds-background.jpg');
     background-size: cover;
-    background-position: center;
 }
 
 .main-block h1 {
@@ -66,6 +65,7 @@ nav a {
     background-color: #4CAF50;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .start-using:hover {
@@ -83,45 +83,32 @@ nav a {
 }
 
 /* Styles for functionality, integration, benefits, invoicing blocks */
-section {
+.functionality-block, .integration-block, .benefits-block, .invoicing-block, .additional-services-block {
     padding: 50px 20px;
     text-align: center;
 }
 
-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-section ul {
+.functionality-block ul, .integration-block ul, .benefits-block ul, .invoicing-block ul {
     list-style: none;
     padding: 0;
     margin: 20px 0;
 }
 
-section li {
+.functionality-block li, .integration-block li, .benefits-block li, .invoicing-block li {
     margin-bottom: 10px;
-    font-size: 18px;
 }
 
-button {
+.test-recognition, .integrations-apis, .invoicing {
     padding: 15px 30px;
     font-size: 18px;
     color: white;
     background-color: #4CAF50;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-button:hover {
+.test-recognition:hover, .integrations-apis:hover, .invoicing:hover {
     background-color: #45a049;
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
 }
 
 /* Styles for additional services block */
@@ -206,37 +193,32 @@ section img {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .main-block h1 {
         font-size: 28px;
     }
 
-    .subtitle {
-        font-size: 20px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-    section li {
-        font-size: 16px;
+    .main-block img {
+        margin-top: 20px;
     }
 
     .additional-services-block .service {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin: 10px 0;
-    }
-
-    .newsletter-form input[type="email"] {
-        width: 100%;
     }
 }
