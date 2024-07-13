@@ -32,6 +32,11 @@ nav a {
     color: #333;
 }
 
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
 .auth-buttons button {
     margin-left: 10px;
     padding: 10px 15px;
@@ -39,6 +44,7 @@ nav a {
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .auth-buttons button:hover {
@@ -49,7 +55,7 @@ nav a {
 .main-block {
     text-align: center;
     padding: 50px 20px;
-    background-image: url('assets/images/clouds-background.jpg');
+    background-image: url('path/to/clouds-background.jpg');
     background-size: cover;
 }
 
@@ -204,7 +210,6 @@ nav a {
     }
 
     .auth-buttons {
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -261,27 +266,6 @@ nav a {
     background-color: #45a049;
 }
 
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.auth-buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #4CAF50;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.auth-buttons button:hover {
-    background-color: #45a049;
-}
-
-/* Add this to styles.css */
-
 /* General form styles */
 form {
     max-width: 300px;
@@ -314,67 +298,3 @@ button {
 button:hover {
     background-color: #45a049;
 }
-
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Styles for the header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-.auth-buttons button {
-    margin-left: 10px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-.auth-buttons button:hover {
-    background-color: #45a049;
-}
-
-/* Styles for the main block */
-.main-block {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('path/to/clouds-background.jpg');
-    background-size: cover;
-}
-
-.main-block h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.start-using {
-    padding: 15px 30px;
-    font-size

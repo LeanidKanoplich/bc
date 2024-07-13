@@ -20,14 +20,26 @@
             </ul>
         </nav>
         <div class="auth-buttons">
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
             <button onclick="logout()">Logout</button>
+            <button onclick="enterWithoutRegistration()">Enter without Registration</button>
         </div>
     </header>
     <main>
         <h1>Welcome to your Dashboard</h1>
         <p>This is the main user dashboard after logging in.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Warehouse</a></li>
+                <li><a href="#">General Ledger</a></li>
+                <li><a href="#">Bank</a></li>
+            </ul>
+        </nav>
     </main>
     <footer>
+        <!-- Include the same footer as index.html -->
+        <!-- Footer content here -->
         <div class="footer-content">
             <div class="footer-section">
                 <h4>bconto</h4>
@@ -78,6 +90,8 @@
             </form>
             <p>&copy; bconto 2024</p>
         </div>
+        <!-- Include the same footer as index.html -->
+        <!-- Footer content here -->
     </footer>
     <script src="scripts.js"></script>
 </body>
