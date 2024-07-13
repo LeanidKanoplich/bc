@@ -35,3 +35,87 @@
 
 // Step 7: Making the site responsive
 // Added CSS media queries to ensure the site looks good on different screen sizes.
+
+
+// Step 8: Adding additional features and enhancements
+// 1. Implemented a "Enter without Registration" button on the registration page to allow quick access to the dashboard.
+// 2. Updated the JavaScript to handle navigation for the "Enter without Registration" button.
+// 3. Added JavaScript to handle logout functionality across all pages.
+// 4. Ensured all pages contain the same consistent footer and navigation elements.
+// 5. Deployed the project to Render for live testing and accessibility.
+
+
+// Existing code
+
+function handleLogin(event) {
+    event.preventDefault();
+    alert("Logging in...");
+    // Implement login logic here
+}
+
+function handleRegister(event) {
+    event.preventDefault();
+    const password = document.getElementById('registerPassword').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    alert("Registering...");
+    // Implement registration logic here
+}
+
+function showLogin() {
+    window.location.href = 'login.html';
+}
+
+function showRegister() {
+    window.location.href = 'register.html';
+}
+
+// scripts.js
+
+function showLogin() {
+    alert('Show login form');
+}
+
+function showRegister() {
+    alert('Show register form');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            alert(`Logged in with email: ${email}`);
+            window.location.href = 'dashboard.html';
+        });
+    }
+
+    if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            alert(`Registered with email: ${email}`);
+            window.location.href = 'dashboard.html';
+        });
+    }
+});
+
+// Placeholder script file
+function logout() {
+    window.location.href = 'index.html';
+}
