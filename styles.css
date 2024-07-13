@@ -222,3 +222,159 @@ nav a {
         margin-bottom: 20px;
     }
 }
+
+/* Styles for auth block */
+.auth-block {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.auth-block form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-block label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.auth-block input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.auth-block button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.auth-block button:hover {
+    background-color: #45a049;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Add this to styles.css */
+
+/* General form styles */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the main block */
+.main-block {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path/to/clouds-background.jpg');
+    background-size: cover;
+}
+
+.main-block h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.start-using {
+    padding: 15px 30px;
+    font-size

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - bconto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">bconto</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Teaching</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Accounting Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+        </div>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="email" required><br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+</body>
+</html>

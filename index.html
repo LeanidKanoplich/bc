@@ -1,1131 +1,156 @@
 <!DOCTYPE html>
-<html lang="lt" ng-app="b1">
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Apskaitos programa B1.lt skirta mažų ir vidutinių įmonių buhalterijos tvarkymui. Buhalterija dar niekada nebuvo tokia paprasta!">
-<meta name="author" content="B1.lt">
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@B1cloud" />
-<meta name="twitter:title" content="Buhalterinės apskaitos programa verslui. 30 dienų nemokamai." />
-<meta name="twitter:description" content="Apskaitos programa B1.lt skirta mažų ir vidutinių įmonių buhalterijos tvarkymui. Buhalterija dar niekada nebuvo tokia paprasta!" />
-<meta name="twitter:creator" content="@B1cloud" />
-<meta name="og:title" content="Buhalterinės apskaitos programa verslui. 30 dienų nemokamai." />
-<meta name="og:image" content="https://www.b1.lt/logo.png" />
-<meta name="og:type" content="article" />
-<meta name="og:url" content="https://www.b1.lt" />
-<meta name="og:description" content="Apskaitos programa B1.lt skirta mažų ir vidutinių įmonių buhalterijos tvarkymui. Buhalterija dar niekada nebuvo tokia paprasta!" />
-<meta name="og:site_name" content="B1.lt" />
-<link hreflang="lt" rel="alternate" href="https://www.b1.lt" />
-<link hreflang="en" rel="alternate" href="https://www.b1.lt/en" />
-<link hreflang="ru" rel="alternate" href="https://www.b1.lt/ru" />
-<link hreflang="x-default" rel="alternate" href="https://www.b1.lt" />
-<link rel="canonical" href="https://www.b1.lt" />
-<link rel="stylesheet" type="text/css" href="/assets/css/page.min.css?v=20240712171920" />
-<title ng-bind-template="{{viewTitle ? viewTitle + ' — ' : ''}}B1.lt">Buhalterinės apskaitos programa verslui. 30 dienų nemokamai.</title>
-<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" sizes="any" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
-<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="var(--theme-grey--base-bg)">
-<link rel="manifest" href="manifest.json">
-<base href="https://www.b1.lt/" />
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext&display=swap">
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Inter:300,400,700&subset=latin-ext&display=swap">
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bconto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="logo">bconto</div>
+        <nav>
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Teaching</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Accounting Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+        </div>
+    </header>
+    <main>
+        <section class="main-block">
+            <div class="background-clouds"></div>
+            <h1>An accounting program in the cloud that unites the accountant and the manager</h1>
+            <button class="start-using">Start using</button>
+            <p class="subtitle">90 days free</p>
+            <img src="path/to/accountants-image.jpg" alt="Two accountants">
+        </section>
+        
+        <section class="functionality-block">
+            <h2>Account recognition within 30 seconds.</h2>
+            <ul>
+                <li>Within 30 seconds until full recognition;</li>
+                <li>Recognizes non-standard accounts;</li>
+                <li>Multiple accounts at once;</li>
+                <li>Self-improvement with continued use;</li>
+                <li>The account is automatically uploaded to storage.</li>
+            </ul>
+            <button class="test-recognition">Test recognition</button>
+            <img src="path/to/interface-example.jpg" alt="Interface example">
+        </section>
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W84WTJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <section class="integration-block">
+            <h2>Wide integration options</h2>
+            <ul>
+                <li>Automatic import of bank statements;</li>
+                <li>API integration;</li>
+                <li>The most popular emails store plugins;</li>
+                <li>Synchronization with e-commerce portals;</li>
+                <li>Integrations with cash registers and POS systems.</li>
+            </ul>
+            <button class="integrations-apis">Integrations and APIs</button>
+            <img src="path/to/integration-logos.jpg" alt="Integration logos">
+        </section>
 
-<script>
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function (){dataLayer.push(arguments);}
+        <section class="benefits-block">
+            <h2>Benefits</h2>
+            <ul>
+                <li>10,000+ companies use bconto - Secure and reliable accounting software</li>
+                <li>Teamwork - Effective work in one system</li>
+                <li>Works with all devices - Available on a smart device, TV, or PC</li>
+                <li>Easy choice - Companies providing accounting services</li>
+                <li>All accounting modules - From invoicing to balance sheeting</li>
+                <li>Friendly to accounting firms - Special conditions for accounting companies</li>
+            </ul>
+        </section>
 
-    gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied'
-    });
-</script>
+        <section class="invoicing-block">
+            <h2>Account in 20 seconds</h2>
+            <ul>
+                <li>Unlimited number of invoices;</li>
+                <li>Ability to send e-mail by mail to the customer;</li>
+                <li>Currency and language integration;</li>
+                <li>Supports smart devices;</li>
+                <li>Adding a logo to your account.</li>
+            </ul>
+            <button class="invoicing">Invoicing</button>
+            <img src="path/to/invoice-example.jpg" alt="Invoice example">
+        </section>
 
-<script>
-    (function(w,d,s,l,i){
-        w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W84WTJ');
-</script>
-
-<nav ng-controller="NavbarController as c" class="navbar yamm navbar-blue">
-    <div class="container">
-        <div class="navbar-header full-width">
-            <a href="https://www.b1.lt" class="navbar-brand" target="_self">
-                <img src="https://static.b1.lt/logo-whiter.svg" width="111" height="28" alt="B1.lt">
-            </a>
-            <button ng-click="c.toggleNavbar()" type="button" class="navbar-toggle toggle-navbar" style="padding-left: 4px;">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="visible-xs visible-sm hidden-md hidden-lg navbar-shortcuts">
+        <section class="additional-services-block">
+            <h2>Additional Services</h2>
+            <div class="service">
+                <h3>Free accounting courses</h3>
+                <p>The only free accounting courses in Lithuania prepared by qualified teachers</p>
+            </div>
+            <div class="service">
+                <h3>Encyclopedia</h3>
+                <p>The free tax and accounting encyclopedia for accounting and tax professionals</p>
+            </div>
+            <div class="service">
+                <h3>Accounting comics</h3>
+                <p>The largest collection of accounting comics in Lithuania. Accounting that makes you feel good</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>bconto</h4>
                 <ul>
-                    <li>
-                        <a href="/login" target="_self" class="navbar-shortcut btn-login btn-outline-primary">Prisijungti</a>
-                    </li>
-                    <li>
-                        <a href="/register?btn=main" target="_self" class="navbar-shortcut btn-toxic btn-register">Registruotis</a>
-                    </li>
+                    <li><a href="#">About bconto</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Free account recognition</a></li>
+                    <li><a href="#">Improvement plan</a></li>
+                    <li><a href="#">Advantages of the cloud</a></li>
+                    <li><a href="#">Accounting program comparison</a></li>
+                    <li><a href="#">For partners</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="navbar-collapse collapse navbar-collapse-1" ng-class="c.navbarCollapseClass()">
-            <div class="visible-xs visible-sm navbar-brand-container">
-                <a href="https://www.b1.lt" class="navbar-brand" target="_self">
-                    <img src="https://static.b1.lt/logo-whiter.svg" width="111" height="28" alt="B1.lt">
-                </a>
-                <button ng-click="c.toggleNavbar()" type="button" class="navbar-toggle toggle-navbar">
-                    <i class="fa fa-close"></i>
-                </button>
-                <div class="clearfix"></div>
-            </div>
-            <div class="navbar-inner-wrapper">
-                <ul class="nav navbar-nav">
-                    <li navbar-dropdown uib-dropdown class="navbar-dropdown">
-                        <a uib-dropdown-toggle href="#">Produktas <b class="caret"></b></a>
-                        <ul uib-dropdown-menu class="dropdown-menu">
-                            <li>
-                                <div class="row equal">
-                                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 bg-white">
-                                        <div class="dropdown-menu-title">Moduliai</div>
-                                        <div class="row">
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/sandelis" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-exchange" style="color: #428BCA"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Sandėlis</h4>
-                                                        <div>Atsargų registravimas apskaitoje ir jų valdymas, pirminių dokumentų registravimas apskaitoje</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/saskaitu-israsymas" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-star" style="color: #FFB752"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Sąskaitų išrašymas</h4>
-                                                        <div>Išrašykite sąskaitas faktūras greitai ir nemokamai: išankstinių, standartinių ir PVM sąskaitų išrašymas</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/ataskaitos" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-print" style="color: #6FB3E0"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Ataskaitos</h4>
-                                                        <div>Didžiosios knygos įrašų registro ataskaitų sudarymas, atsargų ir skolų valdymo ataskaitų sudarymas</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/bankas" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-university" style="color: #87b87f"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Bankas</h4>
-                                                        <div>Piniginių įplaukų ir mokėjimų dokumentų importas ir registravimas apskaitoje, valiutinių operacijų registravimas ir apskaita</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/gamyba" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-wrench" style="color: #D15B47"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Gamyba</h4>
-                                                        <div>Technologinių kortelių sukūrimas ir gatavos produkcijos registravimas apskaitoje</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-4 col-xs-12">
-                                                <a href="/du" target="_self" class="media">
-                                                    <div class="media-left">
-                                                        <i class="fa fa-table" style="color: #9585BF"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">Darbo užmokestis</h4>
-                                                        <div>Darbo laiko žiniaračių sudarymas ir darbo užmokesčio priskaitymų registravimas apskaitoje, Darbo grafiko sukūrimas suminei darbo laiko apskaitai</div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-12 col-xs-12">
-                                                <a href="/moduliai" target="_self" class="dropdown-menu-more">Visi <i class="fa fa-angle-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 bg-grey">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-xs-12">
-                                                <div class="dropdown-menu-title">
-                                                    <a href="/naudojimo-atvejai" target="_self">Naudojimo atvejai</a>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <a href="/buhalteris" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #6CBFF6"></i>Buhalteris
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/buh-imones" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #F9B310"></i>Apskaitos įmonės
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/direktorius" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #146AA4"></i>Direktorius
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/mokymai" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #259818"></i>Mokymai
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/vadybininkas" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle"></i>Vadybininkas
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/parduotuves" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle"></i>El. prekyba
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/darbuotojas" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #F9B310"></i>Darbuotojas
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/individuali-veikla" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #146AA4"></i>Individuali veikla
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <a href="/naudojimo-atvejai" target="_self" class="media-xs">
-                                                            <i class="fa fa-circle" style="color: #F9B310"></i>Visi
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="/integracijos" target="_self">Integracijos</a></li>
-                    <li navbar-dropdown uib-dropdown class="navbar-dropdown">
-                        <a uib-dropdown-toggle href="#">Mokymas <b class="caret"></b></a>
-                        <ul uib-dropdown-menu class="dropdown-menu">
-                            <li>
-                                <div class="row equal">
-                                    <div class="col-lg-12 col-xs-12 padding-15 bg-white">
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/instrukcija" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-address-book-o" style="color: #B53F3F"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Darbo pradžia</h4>
-                                                    <div>B1.lt apskaitos programos vartotojo instrukcija pradedantiems</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/duk" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-exclamation-circle" style="color: #519141"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Žinių bazė</h4>
-                                                    <div>B1.lt naudojimo instrukcijos ir dažniausiai užduodami klausimai</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/apskaitos-kursai" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-graduation-cap" style="color: #3AA395"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Nemokami apskaitos kursai</h4>
-                                                    <div>Nemokami nuotoliniai buhalterinės apskaitos kursai visiems norintiems išmokti buhalterijos</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/mokinkis" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-building" style="color: #8B64BF"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Mokymo įstaigos</h4>
-                                                    <div>Apskaitos specialistus ugdančios Lietuvos mokslo įstaigos išrikiuotos pagal tai, ar jos naudojasi B1.lt programa</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/webinar" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-video-camera" style="color: #269AC5"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Nemokami vebinarai</h4>
-                                                    <div>Nuorodos registracijoms į internetinius seminarus pasiekiamos registruotiems vartotojams.</div>
-                                                </div>
-                                            </a
-
->
-                                        </div>
-                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                            <a href="/wiki" target="_self" class="media">
-                                                <div class="media-left">
-                                                    <i class="fa fa-book" style="color: #519141"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Enciklopedija</h4>
-                                                    <div>Apskaita, ilgalaikis turtas, mokesčiai, pelno mokestis, teisė, steigimas ir valdymas, finansinė analizė, naudingi skaičiai, skaičiuoklės, žinynas, dokumentai</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="/kainos" target="_self">Kainos</a></li>
-                    <li><a href="/apskaitos-kompanijos" target="_self">Apskaitos įmonės</a></li>
+            <div class="footer-section">
+                <h4>Calculators</h4>
+                <ul>
+                    <li><a href="#">Salary calculator 2024</a></li>
+                    <li><a href="#">Per diem calculator</a></li>
+                    <li><a href="#">Calendar of working days</a></li>
+                    <li><a href="#">Individual activity calculator</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="navbar-collapse collapse" ng-class="c.userNavbarCollapseClass()">
-            <div class="visible-xs visible-sm navbar-brand-container">
-                <a href="https://www.b1.lt" class="navbar-brand" target="_self">
-                    <img src="https://static.b1.lt/logo-whiter.svg" width="111" height="28" alt="B1.lt">
-                </a>
-                <button ng-click="c.toggleUserNavbar()" type="button" class="navbar-toggle toggle-navbar">
-                    <i class="fa fa-close"></i>
-                </button>
-                <div class="clearfix"></div>
-            </div>
-            <div class="navbar-inner-wrapper">
-                <ul class="nav navbar-nav">
-                    <li class="hidden-xs hidden-sm">
-                        <a href="/login" target="_self" class="btn-login btn-outline-primary"><span>Prisijungti</span></a>
-                    </li>
-                    <li class="hidden-xs hidden-sm">
-                        <a href="/register?btn=main" target="_self" class="btn-toxic btn-register"><span>Registruotis</span></a>
-                    </li>
+            <div class="footer-section">
+                <h4>Very Serious</h4>
+                <ul>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Encyclopedia FAQ</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-</nav>
-
-<div class="main-container">
-<div class="main-content">
-<div class="content">
-<view-title class="hidden">Buhalterinės apskaitos programa verslui. 30 dienų nemokamai.</view-title>
-
-<section>
-    <div class="cover-left medium-small cover-landing" style="background-color: var(--theme-blue--base2-bg); background-image: url(https://static.b1.lt/pages-covers/coverstartpage.svg);">
-        <div class="container">
-            <div class="cover-left-content">
-                <h1 class="title"><span style="color: var(--theme-grey--base-bg);" data-translation-id="20296">Apskaitos programa debesyje, suvienijusi buhalterį ir vadovą</span></h1>
-                <div class="cover-left-btn">
-                    <a class="btn btn-success-2" href="register" target="_self">Pradėkite naudotis</a>
-                    <div class="hint cover-left-hint"><span style="color: var(--theme-grey--base-bg);">30 dienų nemokamai</span></div>
-                </div>
-            </div>
-            <div class="cover-left-image">
-                <img class="cover-left-image img-static" src="https://static.b1.lt/b1-homepage-people.png" alt="B1.lt apskaitos programa" title="B1.lt apskaitos programa" style="max-width:716px;aspect-ratio:716/460">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="section container-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 header-force-no-margin"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <section>
-                        <div class="row row-flex row-flex-wrap">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="width-100 flex-col">
-                                    <h2><strong data-translation-id="32644">Sąskaitų atpažinimas per 30 sek.</strong></h2>
-                                    <div>
-                                        <p data-translation-id="32645">Neribotas atpažinimas be jokio apmokymo:</p>
-                                        <ul data-translation-id="32646">
-                                            <li>Per 30 sek. iki pilno atpažinimo;</li>
-                                            <li>Atpažįsta nestandartines sąskaitas;</li>
-                                            <li>Daug sąskaitų vienu metu;</li>
-                                            <li>Savaime gerėja nuolat naudojant;</li>
-                                            <li>Sąskaita automatiškai keliama į saugyklą.</li>
-                                        </ul>
-                                        <br>
-                                        <span data-translation-id="32649">
-                                            <a class="btn btn-success-2" href="saskaitu-atpazinimas?utm_source=b1.lt&amp;utm_medium=mainpage&amp;utm_campaign=ai" target="_self">Išbandyti atpažinimą</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="width-100 flex-col">
-                                    <div>
-                                        <a href="saskaitu-atpazinimas?utm_source=b1.lt&amp;utm_medium=mainpage&amp;utm_campaign=ai" target="_self">
-                                            <img class="img-responsive" title="Sąskaitų atpažinimas" src="https://static.b1.lt/pages/banner_invoice_recognition_final.svg" alt="Sąskaitų atpažinimas" width="535" height="330" loading="lazy">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="section container-wrapper" style="background-color: var(--theme-blue--base3-bg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 header-force-no-margin"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <section>
-                        <div class="row row-flex row-flex-wrap">
-                            <div class="col-xs-12 hidden-lg hidden-md hidden-sm visible-xs">
-                                <div class="width-100 flex-col">
-                                    <h2 data-translation-id="27560"><strong>Plačios integracijos galimybės</strong></h2>
-                                    <div>
-                                        <p data-translation-id="27561">Paprastas, greitas ir standartizuotas buhalterijos ir visų išorinių sistemų sujungimas.</p>
-                                        <ul>
-                                            <li data-translation-id="27562">Automatinis banko išrašų importas;</li>
-                                            <li data-translation-id="27563">API integracija;</li>
-                                            <li data-translation-id="27564">Populiariausių el. parduotuvių įskiepiai;</li>
-                                            <li data-translation-id="27565">Sinchronizavimas su elektroninės prekybos portalais;</li>
-                                            <li data-translation-id="27566">Integracijos su kasos aparatais ir POS sistemomis.</li>
-                                        </ul>
-                                        <br>
-                                        <span data-translation-id="27567">
-                                            <a class="btn btn-success-2" href="integracijos?utm_source=b1.lt&amp;utm_medium=mainpage&amp;utm_campaign=integracijos" target="_self">Integracijos ir API</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                                <div class="width-100 flex-col">
-                                    <div>
-                                        <a href="integracijos?utm_source=b1.lt&amp;utm_medium=mainpage&amp;utm_campaign=integracijos" target="_self">
-                                            <img class="img-responsive" title="Integracijos ir API" src="https://static.b1.lt/pages-schemes/banner_integrations_and_api_updated_without_clouds.svg" alt="Integracijos ir API" width="535" height="330" loading="lazy">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs">
-                                <div class="width-100 flex-col">
-                                    <h2 data-translation-id="27560"><strong>Plačios integracijos galimybės</strong></h2>
-                                    <div>
-                                        <p data
-
--translation-id="27561">Paprastas, greitas ir standartizuotas buhalterijos ir visų išorinių sistemų sujungimas.</p>
-                                        <ul>
-                                            <li data-translation-id="27562">Automatinis banko išrašų importas;</li>
-                                            <li data-translation-id="27563">API integracija;</li>
-                                            <li data-translation-id="27564">Populiariausių el. parduotuvių įskiepiai;</li>
-                                            <li data-translation-id="27565">Sinchronizavimas su elektroninės prekybos portalais;</li>
-                                            <li data-translation-id="27566">Integracijos su kasos aparatais ir POS sistemomis.</li>
-                                        </ul>
-                                        <br>
-                                        <span data-translation-id="27567">
-                                            <a class="btn btn-success-2" href="integracijos?utm_source=b1.lt&amp;utm_medium=mainpage&amp;utm_campaign=integracijos" target="_self">Integracijos ir API</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="section container-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 header-force-no-margin"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <section>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="grid-flex" style="row-gap: 30px;column-gap: 10px;">
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-green--base-bg); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-check-circle-o"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">10000+ įmonių naudoja B1.lt</h3>
-                                                <div class="text-center">Saugi ir patikima apskaitos programa</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-grey--base-on-purpleicon); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-users"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">Komandinis darbas</h3>
-                                                <div class="text-center">Efektyvus darbas vienoje sistemoje</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-blue--base3-bg-on-light); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-tablet"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">Veikia su visais įrenginiais</h3>
-                                                <div class="text-center">Pasiekiama išmaniuoju įrenginiu, TV ar PC</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="grid-flex" style="row-gap: 30px;">
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-grey--base-on-redicon); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-map-marker"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">
-                                                    <a href="apskaitos-kompanijos" target="_blank" rel="noopener">Lengvas pasirinkimas</a>
-                                                </h3>
-                                                <div class="text-center">Įmonės teikiančios buhalterinės apskaitos paslaugas</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-orange--base-bg); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-server"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">
-                                                    <a href="moduliai" target="_blank" rel="noopener">Visi apskaitos moduliai</a>
-                                                </h3>
-                                                <div class="text-center">Nuo sąskaitos išrašymo iki balanso sudarymo</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-pink--base-bg); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-calculator"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center">
-                                                    <a href="buh-imones" target="_blank" rel="noopener">Draugiška apskaitos įmonėms</a>
-                                                </h3>
-                                                <div class="text-center">Ypatingos sąlygos buhalterinės apskaitos įmonėms</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="section container-wrapper" style="background-color: white;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 header-force-no-margin"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <section>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="grid-flex" style="row-gap: 30px;">
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-blue--base-bg); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-graduation-cap"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center" data-translation-id="27570">
-                                                    <a href="apskaitos-kursai" target="_blank" rel="noopener">Nemokami apskaitos kursai</a>
-                                                </h3>
-                                                <div class="text-center" data-translation-id="27571">
-                                                    Vieninteliai nemokami buhalterinės apskaitos kursai Lietuvoje, paruošti kvalifikuotų dėstytojų
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-green--base-bg); font-size: 36px;">
-                                                        <i class="fa fa-lg fa-info-circle"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center" data-translation-id="27572">
-                                                    <a href="wiki" target="_blank" rel="noopener">Enciklopedija</a>
-                                                </h3>
-                                                <div class="text-center" data-translation-id="27573">
-                                                    Nemokama mokesčių ir apskaitos enciklopedija, vienijanti apskaitos ir mokesčių specialistus
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="flex-basis: 28.571428571429%; flex-grow: 1;">
-                                        <div class="width-100 flex-col">
-                                            <div>
-                                                <div class="text-center">
-                                                    <span style="color: var(--theme-orange--base-bg); font-size: 36px;">
-                                                        <i class="
-
-fa fa-lg fa-smile-o"></i>
-                                                    </span>
-                                                </div>
-                                                <h3 class="text-center" data-translation-id="27574">
-                                                    <a href="komiksai" target="_blank" rel="noopener">Buhalteriniai komiksai</a>
-                                                </h3>
-                                                <div class="text-center" data-translation-id="27575">
-                                                    <span style="color: var(--theme-grey--base-bg);">
-                                                        Didžiausia Lietuvoje buhalterinių komiksų kolekcija. Buhalterija, kuri kelia nuotaiką
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script type="application/ld+json">
-{
-    "@context" : "http://schema.org",
-    "@type" : "Organization",
-    "name" : "B1.lt",
-    "url" : "https://www.b1.lt/",
-    "logo": "https://static.b1.lt/logo-white.svg",
-    "sameAs" : [
-        "https://www.facebook.com/B1cloud/",
-        "https://twitter.com/B1cloud",
-        "https://google.com/+B1Ltcloud",
-        "https://www.linkedin.com/company/9997415",
-        "https://youtube.com/c/B1Ltcloud"
-    ]
-}
-</script>
-
-</div>
-</div>
-</div>
-
-<footer ng-controller="FooterController as c" class="footer">
-<div class="footer-menu">
-<div class="container">
-<div class="row">
-<div class="col-lg-12 col-xs-12"></div>
-<div class="col-sm-3 col-xs-12">
-<div class="footer-menu-title">B1.lt</div>
-<ul class="footer-menu-list">
-<li><a href="/buhalterine-programa" target="_self">Apie B1.lt</a></li>
-<li><a href="/atsiliepimai" target="_self">Atsiliepimai</a></li>
-<li><a href="/saskaitu-atpazinimas" target="_self">Nemokamas sąskaitų atpažinimas</a></li>
-<li><a href="/patobulinimu-planas" target="_self">Patobulinimų planas</a></li>
-<li><a href="/privalumai" target="_self">Debesies privalumai</a></li>
-<li><a href="/palyginimas" target="_self">Buh. programų palyginimas</a></li>
-<li><a href="/partneriams" target="_self">Partneriams</a></li>
-</ul>
-</div>
-<div class="col-sm-3 col-xs-12">
-<div class="footer-menu-title">Skaičiuoklės</div>
-<ul class="footer-menu-list">
-<li><a href="/atlyginimo-skaiciuokle" target="_self">Atlyginimo skaičiuoklė 2024</a></li>
-<li><a href="/dienpinigiu-skaiciuokle" target="_self">Dienpinigių skaičiuoklė</a></li>
-<li><a href="/darbo-dienu-kalendorius/2024" target="_self">Darbo dienų kalendorius</a></li>
-<li><a href="/individualios-veiklos-skaiciuokle" target="_self">Individualios veiklos skaičiuoklė</a></li>
-</ul>
-</div>
-<div class="col-sm-3 col-xs-12">
-<div class="footer-menu-title">LABAI RIMTAI</div>
-<ul class="footer-menu-list">
-<li><a href="/taisykles" target="_self">Taisyklės</a></li>
-<li><a href="/wiki-lt-duk" target="_self">Enciklopedijos DUK</a></li>
-<li><a href="/komiksai" target="_self">Komiksai</a></li>
-<li><a href="/brendas" target="_self">Brendas</a></li>
-<li><a href="/kontaktai" target="_self">Kontaktai</a></li>
-</ul>
-</div>
-<div class="col-sm-3 col-xs-12">
-<div class="footer-menu-title">Kalbos</div>
-<ul class="footer-menu-list">
-<li><a href="https://www.b1.lt" target="_self" class="language-link"><i class="flag-icon flag-icon-lt"></i>Lietuvių</a></li>
-<li><a href="https://www.b1.lt/en" target="_self" class="language-link"><i class="flag-icon flag-icon-en"></i>English</a></li>
-<li><a href="https://www.b1.lt/ru" target="_self" class="language-link"><i class="flag-icon flag-icon-ru"></i>Русский</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-meta">
-<div class="row">
-<div class="col-lg-8 col-md-12 text-left-lg text-center">
-<form ng-submit="c.subscribe()" class="form-inline">
-<div class="form-group margin-right-5">&copy; B1.lt 2024</div>
-<div class="form-group margin-left-5 margin-right-5">
-<input ng-model="c.model.email" placeholder="El. paštas" type="text" class="form-control" />
-</div>
-<div class="form-group margin-left-5 margin-right-5">
-<label><input ng-model="c.model.agree" type="checkbox" class="ace" /><span class="lbl"> Sutinku gauti naujienlaiškį</span></label>
-</div>
-<div class="form-group margin-left-5">
-<input value="Prenumeruoti" type="submit" class="btn btn-sm btn-primary" />
-</div>
-</form>
-</div>
-<div class="col-lg-4 col-md-12 text-right-lg text-center">
-<a href="https://www.instagram.com/b1.lt" target="_blank" class="vertical-align-middle btn-link no-underline" rel="nofollow noopener noreferrer" aria-label="Instagram B1.lt">
-<i class="fa fa-2x fa-instagram vertical-align-middle"></i>
-</a>
-<a href="https://www.facebook.com/B1cloud" target="_blank" class="vertical-align-middle btn-link no-underline" rel="nofollow noopener noreferrer" aria-label="Facebook B1.lt">
-<i class="fa fa-2x fa-facebook-square vertical-align-middle"></i>
-</a>
-<a href="https://www.linkedin.com/company/9997415" target="_blank" class="vertical-align-middle btn-link no-underline" rel="nofollow noopener noreferrer" aria-label="LinkedIn B1.lt">
-<i class="fa fa-2x fa-linkedin-square vertical-align-middle"></i>
-</a>
-<a href="https://twitter.com/B1cloud" target="_blank" class="vertical-align-middle btn-link no-underline" rel="nofollow noopener noreferrer" aria-label="Twitter(X) B1.lt">
-<i class="fa fa-2x fa-twitter-x-square vertical-align-middle"></i>
-</a>
-<a href="https://www.youtube.com/channel/UC5vRzbrzC4zGN-EZgmVCyRA?sub_confirmation=1" rel="nofollow noopener noreferrer" target="_blank" class="vertical-align-middle btn-link no-underline" aria-label="YouTube B1.lt">
-<i class="fa fa-2x fa-youtube-square vertical-align-middle"></i>
-</a>
-</div>
-</div>
-</div>
-</footer>
-
-<script>
-    var currentUser = {};
-    var currentCompanyUser = {"user":[],"company":[],"permissions":[]};
-    var ASSETS_VERSION = '20240712171920';
-</script>
-<script type="text/ng-template" id="notification-success_template.html">
-    <div class="ui-notification">
-        <h3 ng-show="shortMessage"><i class="fa fa-check"></i> <span ng-bind-html="shortMessage"></span></h3>
-        <div class="message"><div ng-bind-html="message"></div></div>
-    </div>
-</script>
-<script type="text/ng-template" id="notification-info_template.html">
-    <div class="ui-notification">
-        <h3 ng-show="shortMessage"><span ng-bind-html="shortMessage"></span></h3>
-        <div class="message"><div ng-bind-html="message"></div></div>
-    </div>
-</script>
-<script type="text/ng-template" id="notification-primary_template.html">
-    <div class="ui-notification">
-        <h3 ng-show="shortMessage"><span ng-bind-html="shortMessage"></span></h3>
-        <div class="message"><div ng-bind-html="message"></div></div>
-    </div>
-</script>
-<script type="text/ng-template" id="notification-warning_template.html">
-    <div class="ui-notification">
-        <h3 ng-show="shortMessage"><i class="fa fa-exclamation-triangle"></i> <span ng-bind-html="shortMessage"></span></h3>
-        <div class="message">
-            <div ng-bind-html="message"></div>
-            <div ng-show="errors">
-                <hr ng-show="message" class="hr-4">
-                <ul class="list-unstyled">
-                    <li ng-repeat="(attribute, attribute
-
-Errors) in errors">
-                        <ul class="list-unstyled">
-                            <li ng-repeat="error in attributeErrors track by $index" ng-bind="error"></li>
-                        </ul>
-                    </li>
+            <div class="footer-section">
+                <h4>Languages</h4>
+                <ul>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Polish</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
                 </ul>
             </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address">
+                <label>
+                    <input type="checkbox"> I agree to receive the newsletter
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>&copy; bconto 2024</p>
         </div>
-    </div>
-</script>
-<script type="text/ng-template" id="notification-error_template.html">
-    <div class="ui-notification">
-        <h3 ng-show="shortMessage"><i class="fa fa-exclamation-triangle"></i> <span ng-bind-html="shortMessage"></span></h3>
-        <div class="message"><div ng-bind-html="message"></div></div>
-            <div ng-show="errors">
-                <hr ng-show="message" class="hr-4">
-                <ul class="list-unstyled">
-                    <li ng-repeat="(attribute, attributeErrors) in errors">
-                        <ul class="list-unstyled">
-                            <li ng-repeat="error in attributeErrors track by $index" ng-bind="error"></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</script>
-<script type="text/ng-template" id="notification-use_cookies_template.html">
-    <div class="ui-notification ui-notification-cookies">
-        <img src="https://static.b1.lt/cat-cookies-smaller.png" class="img-kitten" width="107" height="125" alt="Sutinku">
-        <div class="margin-20" style="width: 150px;">
-            <div ng-bind-html="labels.message"></div>
-            <button ng-click="processAgree()" class="btn btn-sm btn-outline-primary margin-top-15">Sutinku</button>
-        </div>
-    </div>
-</script>
-<script type="text/ng-template" id="typeahead-company.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div ng-show="match.model.code"><span class="grey">Įmonės kodas:</span> <span ng-bind="match.model.code"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-company-short.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div ng-show="match.model.name"><span class="grey">Įmonės pavadinimas:</span> <span ng-bind="match.model.name"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-warehouse.html">
-    <a>
-        <div class="tt-suggestion tt-selectable">
-            <div ng-if="match.label"><span class="grey">Prekės:</span><span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.code"><span class="grey">Kodas:</span><span ng-bind-html="match.model.code | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.priceWithoutVat"><span class="grey">Kaina be PVM:</span><span ng-bind-html="match.model.priceWithoutVat.toFixed(4) | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.quantity"><span class="grey">Kiekis:</span><span ng-bind-html="match.model.quantity.toFixed(3) | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.cost"><span class="grey">Savikaina:</span><span ng-bind-html="match.model.cost.toFixed(4) | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.purchaseDate"><span class="grey">Pirkimo data:</span><span ng-bind-html="match.model.purchaseDate | uibTypeaheadHighlight:query"></span></div>
-            <div ng-if="match.model.measurementUnitName"><span class="grey">Mat. vnt.:</span><span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-user.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div><span class="grey">El. paštas:</span> <span ng-bind="match.model.email"></span></div>
-            <div ng-show="match.model.phone"><span class="grey">Telefonas:</span> <span ng-bind="match.model.phone"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-ai.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div ng-show="match.model.companyName"><span class="grey">Įmonė:</span> <span ng-bind="match.model.companyName"></span></div>
-            <div ng-show="match.model.companyCode"><span class="grey">Įmonės kodas:</span> <span ng-bind="match.model.companyCode"></span></div>
-            <div ng-show="match.model.companyId"><span class="grey">Įm.:</span> <span ng-bind="match.model.companyId"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-employee-agreement.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div ng-show="match.model.number"><span class="grey">Sutarties numeris:</span> <span ng-bind="match.model.number"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-employee.html">
-    <a>
-        <div ng-bind-html="match.label | uibTypeaheadHighlight:query"></div>
-        <div class="smaller-80">
-            <div ng-show="match.model.email"><span class="grey">El. paštas:</span> <span ng-bind="match.model.email"></span></div>
-            <div ng-show="match.model.positionName"><span class="grey">Pareigos:</span> <span ng-bind="match.model.positionName"></span></div>
-            <div><span class="grey">ID:</span> <span ng-bind="match.model.id"></span></div>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-client.html">
-    <div class="blue margin-left-5 margin-right-5 smaller-90" ng-if="match.model._firstFromInternalSource">
-        <i class="fa fa-address-book"></i> Iš vidinių šaltinių
-    </div>
-    <div class="blue margin-left-5 margin-right-5 smaller-90" ng-if="match.model._firstFromExternalSource">
-        <i class="fa fa-address-book"></i> Iš viešųjų šaltinių
-    </div>
-    <a>
-        <span class="uib-typeahead-preview">
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" class="uib-typeahead-query"></span>
-            <span class="uib-typeahead-info">
-                <span ng-show="match.model.code" ng-bind-html="match.model.code | uibTypeaheadHighlight:query"></span>
-            </span>
-        </span>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-purchase-item.html">
-    <a tabindex="-1">
-        <div ng-if="match.label">
-            <span class="grey">Pavadinimas: </span>
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" ng-attr-title="{{match.label}}"></span>
-        </div>
-        <div ng-if="match.model.code">
-            <span class="grey">Kodas: </span>
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-if="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-if="match.model.priceWithoutVat">
-
-
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-if="match.model.attributeName">
-            <span class="grey">Prekės požymis: </span>
-            <span ng-bind-html="match.model.attributeName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.attributeName}}"></span>
-        </div>
-        <div ng-if="match.model.measurementUnitName">
-            <span class="grey">Matavimo vienetas: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-stock-taking-item.html">
-    <a tabindex="-1">
-        <div ng-if="match.label">
-            <span class="grey">Pavadinimas: </span>
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" ng-attr-title="{{match.label}}"></span>
-        </div>
-        <div ng-if="match.model.code">
-            <span class="grey">Kodas: </span>
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-if="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-if="match.model.priceWithoutVat">
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-if="match.model.attributeName">
-            <span class="grey">Prekės požymis: </span>
-            <span ng-bind-html="match.model.attributeName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.attributeName}}"></span>
-        </div>
-        <div ng-if="match.model.measurementUnitName">
-            <span class="grey">Matavimo vienetas: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-sale-item.html">
-    <a tabindex="-1">
-        <div ng-if="match.label">
-            <span class="grey">Prekės: </span>
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" ng-attr-title="{{match.label}}"></span>
-        </div>
-        <div ng-if="match.model.code">
-            <span class="grey">Kodas: </span>
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-if="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-if="match.model.priceWithoutVat">
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-if="match.model.stock">
-            <span class="grey">Likutis: </span>
-            <span ng-bind-html="match.model.stock | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.stock}}"></span>
-        </div>
-        <div ng-if="match.model.cost">
-            <span class="grey">Savikaina: </span>
-            <span ng-bind-html="match.model.cost | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.cost}}"></span>
-        </div>
-        <div ng-if="match.model.purchaseDate">
-            <span class="grey">Pirkimo data: </span>
-            <span ng-bind-html="match.model.purchaseDate | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.purchaseDate}}"></span>
-        </div>
-        <div ng-if="match.model.measurementUnitName">
-            <span class="grey">Mat. vnt.: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-item-movement">
-    <a tabindex="-1">
-        <div ng-show="match.label">
-            <span class="grey">Pavadinimas: </span>
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" ng-attr-title="{{match.label}}"></span>
-        </div>
-        <div ng-show="match.model.code">
-            <span class="grey">Kodas: </span>
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-show="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-show="match.model.priceWithoutVat">
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-show="match.model.attributeName">
-            <span class="grey">Prekės požymis: </span>
-            <span ng-bind-html="match.model.attributeName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.attributeName}}"></span>
-        </div>
-        <div ng-show="match.model.measurementUnitName">
-            <span class="grey">Matavimo vienetas: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-tech-card">
-    <a tabindex="-1">
-        <div ng-show="match.model.itemName">
-            <span class="grey">Pavadinimas: </span>
-            <span ng-bind-html="match.model.itemName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.itemName}}"></span>
-        </div>
-        <div ng-show="match.model.code">
-            <span class="grey">Kodas: </span>
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-show="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-show="match.model.priceWithoutVat">
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-show="match.model.measurementUnitName">
-            <span class="grey">Matavimo vienetas: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-customer-sales">
-    <a tabindex="-1">
-        <div>
-            <span ng-bind-html="match.model.number | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.number}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-item-stock">
-    <a tabindex="-1">
-        <div ng-show="match.label">
-            <span class="grey">Prekės: </span>
-            <span ng-bind-html="match.label | uibTypeaheadHighlight:query" ng-attr-title="{{match.label}}"></span>
-        </div>
-        <div ng-show="match.model.code">
-            <span class="grey">Kodas: </span>
-
-
-            <span ng-bind-html="match.model.code | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.code}}"></span>
-        </div>
-        <div ng-show="match.model.barcode">
-            <span class="grey">Barkodas: </span>
-            <span ng-bind-html="match.model.barcode | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.barcode}}"></span>
-        </div>
-        <div ng-show="match.model.priceWithoutVat">
-            <span class="grey">Kaina be PVM: </span>
-            <span ng-bind-html="match.model.priceWithoutVat | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.priceWithoutVat}}"></span>
-        </div>
-        <div ng-show="match.model.stock">
-            <span class="grey">Likutis: </span>
-            <span ng-bind-html="match.model.stock | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.stock}}"></span>
-        </div>
-        <div ng-show="match.model.cost">
-            <span class="grey">Savikaina: </span>
-            <span ng-bind-html="match.model.cost | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.cost}}"></span>
-        </div>
-        <div ng-show="match.model.purchaseDate">
-            <span class="grey">Pirkimo data: </span>
-            <span ng-bind-html="match.model.purchaseDate | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.purchaseDate}}"></span>
-        </div>
-        <div ng-show="match.model.measurementUnitName">
-            <span class="grey">Mat. vnt.: </span>
-            <span ng-bind-html="match.model.measurementUnitName | uibTypeaheadHighlight:query" ng-attr-title="{{match.model.measurementUnitName}}"></span>
-        </div>
-    </a>
-</script>
-<script type="text/ng-template" id="typeahead-settings-bank-accounting.html">
-    <a>
-        <span ng-bind-html="match.model.correspondenceAccountCode + ' :: ' + match.model.internalName + ' :: ' + match.model.currencyCode | uibTypeaheadHighlight:query"></span>
-        <span ng-if="match.model.name" ng-bind-html="match.model.name | uibTypeaheadHighlight:query"></span>
-    </a>
-</script>
-
-<script src="/assets/js/page.min.js?v=20240712171920"></script>
+    </footer>
 </body>
 </html>

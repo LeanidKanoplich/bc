@@ -175,3 +175,13 @@ bconto-website/
                 <input type="email" placeholder="Email address"> <!-- Поле ввода email -->
                 <label>
                     <input type="checkbox"> I agree to
+
+
+                    bconto-website/
+│
+├── index.html
+├── login.html
+├── register.html
+├── dashboard.html
+├── styles.css
+└── scripts.js
