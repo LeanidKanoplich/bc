@@ -185,3 +185,132 @@ bconto-website/
 ├── dashboard.html
 ├── styles.css
 └── scripts.js
+
+<!-- Include the same footer as index.html -->
+        <!-- Footer content here -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>bconto</h4>
+                <ul>
+                    <li><a href="#">About bconto</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Free account recognition</a></li>
+                    <li><a href="#">Improvement plan</a></li>
+                    <li><a href="#">Advantages of the cloud</a></li>
+                    <li><a href="#">Accounting program comparison</a></li>
+                    <li><a href="#">For partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Calculators</h4>
+                <ul>
+                    <li><a href="#">Salary calculator 2024</a></li>
+                    <li><a href="#">Per diem calculator</a></li>
+                    <li><a href="#">Calendar of working days</a></li>
+                    <li><a href="#">Individual activity calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Very Serious</h4>
+                <ul>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Encyclopedia FAQ</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Languages</h4>
+                <ul>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Polish</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                </ul>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address">
+                <label>
+                    <input type="checkbox"> I agree to receive the newsletter
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>&copy; bconto 2024</p>
+        </div>
+        <!-- Include the same footer as index.html -->
+        <!-- Footer content here -->
+
+      project-root/
+│
+├── index.html
+├── login.html
+├── register.html
+├── dashboard.html
+│
+├── css/
+│   ├── styles.css
+│   └── styles2.css
+│
+├── js/
+│   ├── auth.js
+│   ├── clients.js
+│   ├── warehouse.js
+│   ├── ledger.js
+│   ├── bank.js
+│   └── scripts.js
+│
+└── assets/
+    └── images/
+        └── clouds-background.jpg
+
+ <div class="footer-content">
+            <div class="footer-section">
+                <h4>bconto</h4>
+                <ul>
+                    <li><a href="#">About bconto</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Free account recognition</a></li>
+                    <li><a href="#">Improvement plan</a></li>
+                    <li><a href="#">Advantages of the cloud</a></li>
+                    <li><a href="#">Accounting program comparison</a></li>
+                    <li><a href="#">For partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Calculators</h4>
+                <ul>
+                    <li><a href="#">Salary calculator 2024</a></li>
+                    <li><a href="#">Per diem calculator</a></li>
+                    <li><a href="#">Calendar of working days</a></li>
+                    <li><a href="#">Individual activity calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Very Serious</h4>
+                <ul>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Encyclopedia FAQ</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Languages</h4>
+                <ul>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Polish</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                </ul>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email address">
+                <label>
+                    <input type="checkbox"> I agree to receive the newsletter
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>&copy; bconto 2024</p>
+        </div>

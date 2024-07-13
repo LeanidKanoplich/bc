@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - bconto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">bconto</div>
+        <nav>
+            <ul>
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Teaching</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Accounting Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='../html/index.html'">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h1>Welcome to your Dashboard</h1>
+            <p>This is the main user dashboard after logging in.</p>
+            <div class="links">
+                <a href="#" onclick="showClients()">Clients</a>
+                <a href="#" onclick="showWarehouse()">Warehouse</a>
+                <a href="#" onclick="showLedger()">General Ledger</a>
+                <a href="#" onclick="showBank()">Bank</a>
+            </div>
+        </section>
+        <section id="clients" class="section">
+            <!-- Clients section content -->
+        </section>
+        <section id="warehouse" class="section">
+            <!-- Warehouse section content -->
+        </section>
+        <section id="ledger" class="section">
+            <!-- Ledger section content -->
+        </section>
+        <section id="bank" class="section">
+            <!-- Bank section content -->
+        </section>
+    </main>
+    <footer>
+        <!-- Include the same footer as index.html -->
+        <div class="footer-content">
+            <!-- Footer content here -->
+        </div>
+    </footer>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/clients.js"></script>
+    <script src="/js/warehouse.js"></script>
+    <script src="/js/ledger.js"></script>
+    <script src="/js/bank.js"></script>
+</body>
+</html>

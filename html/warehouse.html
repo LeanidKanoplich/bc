@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - bconto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Warehouse - bconto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles2.css">
 </head>
 <body>
     <header>
+        <!-- Include the same navigation as index.html -->
         <div class="logo">bconto</div>
         <nav>
             <ul>
@@ -25,23 +27,13 @@
         </div>
     </header>
     <main>
-        <section class="register-form">
-            <h1>Register</h1>
-            <form id="registerForm">
-                <label for="email">Email:</label>
-                <input type="email" id="registerEmail" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="registerPassword" name="password" required>
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <button type="submit">Register</button>
-                <button type="button" onclick="enterWithoutRegistration()">Enter without Registration</button>
-            </form>
+        <section class="warehouse-section">
+            <h1>Warehouse</h1>
+            <div id="warehouse"></div>
         </section>
     </main>
     <footer>
-       <!-- Include the same footer as index.html -->
-        <!-- Footer content here -->
+        <!-- Include the same footer as index.html -->
         <div class="footer-content">
             <div class="footer-section">
                 <h4>bconto</h4>
@@ -92,9 +84,7 @@
             </form>
             <p>&copy; bconto 2024</p>
         </div>
-        <!-- Include the same footer as index.html -->
-        <!-- Footer content here -->
     </footer>
-    <script src="scripts.js"></script>
+    <script src="/js/warehouse.js"></script>
 </body>
 </html>
