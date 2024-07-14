@@ -1,0 +1,488 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the main block */
+.main-block {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path/to/clouds-background.jpg');
+    background-size: cover;
+}
+
+.main-block h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.start-using {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.start-using:hover {
+    background-color: #45a049;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.main-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for functionality, integration, benefits, invoicing blocks */
+.functionality-block, .integration-block, .benefits-block, .invoicing-block, .additional-services-block {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.functionality-block ul, .integration-block ul, .benefits-block ul, .invoicing-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.functionality-block li, .integration-block li, .benefits-block li, .invoicing-block li {
+    margin-bottom: 10px;
+}
+
+.test-recognition, .integrations-apis, .invoicing {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+.test-recognition:hover, .integrations-apis:hover, .invoicing:hover {
+    background-color: #45a049;
+}
+
+/* Styles for additional services block */
+.additional-services-block .service {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: left;
+}
+
+.additional-services-block .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the footer */
+.footer-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.newsletter-form label {
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-content p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-block h1 {
+        font-size: 28px;
+    }
+
+    .main-block img {
+        margin-top: 20px;
+    }
+
+    .additional-services-block .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for auth block */
+.auth-block {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.auth-block form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-block label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.auth-block input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.auth-block button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.auth-block button:hover {
+    background-color: #45a049;
+}
+
+/* General form styles */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the main dashboard layout */
+.dashboard-container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a.active {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section-content {
+    display: none;
+}
+
+.section-content:not(.hidden) {
+    display: block;
+}
+
+/* Styles for the footer */
+.footer-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.newsletter-form label {
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-content p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
