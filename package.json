@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "start": "node src/index.js"
   },
   "author": "",
+
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
