@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bconto</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-gray-200 shadow p-4 flex justify-between items-center">
+        <button onclick="logout()" class="text-red-500">Logout</button>
+    </header>
+    
+    <header class="bg-gray-200 shadow p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-600">bconto</div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Product</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Integrations</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Teaching</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Prices</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Accounting Companies</a></li>
+            </ul>
+        </nav>
+        <div class="space-x-2">
+            <button onclick="window.location.href='./login.html'" class="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+            <button onclick="window.location.href='./register.html'" class="bg-green-500 text-white px-4 py-2 rounded">Register</button>
+            <button onclick="window.location.href='./dashboard.html'" class="bg-orange-500 text-white px-4 py-2 rounded-full">Enter without Registration</button>
+        </div>        
+    </header>
+    <main class="p-4">
+        <section class="bg-white p-6 rounded shadow-md mb-8 text-center main-block">
+            <h1 class="text-3xl font-bold mb-4">An accounting program in the cloud that unites the accountant and the manager</h1>
+            <button class="bg-blue-500 text-white px-6 py-2 rounded mt-2 start-using">Start using</button>
+            <p class="text-gray-600 mt-2">90 days free</p>
+            <img src="assets/images/two-accountants.jpg" alt="Two accountants" class="mt-4 rounded mx-auto">
+        </section>
+        <section class="bg-white p-6 rounded shadow-md mb-8 text-center functionality-block">
+            <h2 class="text-2xl font-bold mb-4">Account recognition within 30 seconds.</h2>
+            <ul class="list-disc list-inside">
+                <li class="text-gray-600">Within 30 seconds until full recognition;</li>
+                <li class="text-gray-600">Recognizes non-standard accounts;</li>
+                <li class="text-gray-600">Multiple accounts at once;</li>
+                <li class="text-gray-600">Self-improvement with continued use;</li>
+                <li class="text-gray-600">The account is automatically uploaded to storage.</li>
+            </ul>
+            <button class="bg-blue-500 text-white px-6 py-2 mt-4 rounded test-recognition">Test recognition</button>
+            <img src="assets/images/interface-example.jpg" alt="Interface example" class="mt-4 rounded mx-auto">
+        </section>
+        <section class="bg-white p-6 rounded shadow-md mb-8 text-center integration-block">
+            <h2 class="text-2xl font-bold mb-4">Wide integration options</h2>
+            <ul class="list-disc list-inside">
+                <li class="text-gray-600">Automatic import of bank statements;</li>
+                <li class="text-gray-600">API integration;</li>
+                <li class="text-gray-600">The most popular emails store plugins;</li>
+                <li class="text-gray-600">Synchronization with e-commerce portals;</li>
+                <li class="text-gray-600">Integrations with cash registers and POS systems.</li>
+            </ul>
+            <button class="bg-blue-500 text-white px-6 py-2 mt-4 rounded integrations-apis">Integrations and APIs</button>
+            <img src="assets/images/integration-logos.jpg" alt="Integration logos" class="mt-4 rounded mx-auto">
+        </section>
+        <section class="bg-white p-6 rounded shadow-md mb-8 text-center benefits-block">
+            <h2 class="text-2xl font-bold mb-4">Benefits</h2>
+            <ul class="list-disc list-inside">
+                <li class="text-gray-600">10,000+ companies use bconto - Secure and reliable accounting software</li>
+                <li class="text-gray-600">Teamwork - Effective work in one system</li>
+                <li class="text-gray-600">Works with all devices - Available on a smart device, TV, or PC</li>
+                <li class="text-gray-600">Easy choice - Companies providing accounting services</li>
+                <li class="text-gray-600">All accounting modules - From invoicing to balance sheeting</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-gray-200 p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-2">bconto</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-white">About bconto</a></li>
+                    <li><a href="#" class="hover:text-white">Reviews</a></li>
+                    <li><a href="#" class="hover:text-white">Free account recognition</a></li>
+                    <li><a href="#" class="hover:text-white">Improvement plan</a></li>
+                    <li><a href="#" class="hover:text-white">Advantages of the cloud</a></li>
+                    <li><a href="#" class="hover:text-white">Accounting program comparison</a></li>
+                    <li><a href="#" class="hover:text-white">For partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-2">Calculators</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-white">Salary calculator 2024</a></li>
+                    <li><a href="#" class="hover:text-white">Per diem calculator</a></li>
+                    <li><a href="#" class="hover:text-white">Calendar of working days</a></li>
+                    <li><a href="#" class="hover:text-white">Individual activity calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-2">Very Serious</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-white">Rules</a></li>
+                    <li><a href="#" class="hover:text-white">Encyclopedia FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Comics</a></li>
+                    <li><a href="#" class="hover:text-white">Brand</a></li>
+                    <li><a href="#" class="hover:text-white">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-2">Languages</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-white">German</a></li>
+                    <li><a href="#" class="hover:text-white">Polish</a></li>
+                    <li><a href="#" class="hover:text-white">English</a></li>
+                    <li><a href="#" class="hover:text-white">Russian</a></li>
+                </ul>
+            </div>
+        </div>
+        <form class="mt-4 flex flex-col md:flex-row items-center justify-center newsletter-form">
+            <input type="email" placeholder="Email address" class="bg-gray-700 text-gray-200 px-4 py-2 rounded mb-2 md:mb-0 md:mr-2">
+            <label class="flex items-center text-gray-400 mb-2 md:mb-0">
+                <input type="checkbox" class="mr-2"> I agree to receive the newsletter
+            </label>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Subscribe</button>
+        </form>
+        <p class="text-center mt-4">&copy; bconto 2024</p>
+    </footer>
+    <script src="js/auth.js"></script>
+    <script src="js/clients.js"></script>
+    <script src="js/bank.js"></script>
+    <script src="js/ledger.js"></script>
+    <script src="js/warehouse.js"></script>
+</body>
+</html>
