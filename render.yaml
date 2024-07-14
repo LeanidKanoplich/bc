@@ -2,9 +2,14 @@ services:
   - type: web
     name: bconto-tw-react
     env: node
-    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm start
+    plan: free
     envVars:
-      - key: NODE_VERSION
-        value: 16
+      - key: NODE_ENV
+        value: production
+    runtime: node 16.20.2
+    build:
+      command: NODE_OPTIONS=--openssl-legacy-provider npm install && npm run build
+    start:
+      command: npm start
