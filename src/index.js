@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // Убедитесь, что путь к файлу указан верно
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css'; // Убедитесь, что этот файл существует и правильно настроен
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/*" element={<App />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
