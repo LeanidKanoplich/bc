@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bconto</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="../src/index.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
     <header class="bg-gray-200 shadow p-4 flex justify-between items-center">
@@ -31,46 +31,7 @@
         </div>        
     </header>
     <main class="p-4">
-        <section class="bg-white p-6 rounded shadow-md mb-8 text-center main-block">
-            <h1 class="text-3xl font-bold mb-4">An accounting program in the cloud that unites the accountant and the manager</h1>
-            <button class="bg-blue-500 text-white px-6 py-2 rounded mt-2 start-using">Start using</button>
-            <p class="text-gray-600 mt-2">90 days free</p>
-            <img src="assets/images/two-accountants.jpg" alt="Two accountants" class="mt-4 rounded mx-auto">
-        </section>
-        <section class="bg-white p-6 rounded shadow-md mb-8 text-center functionality-block">
-            <h2 class="text-2xl font-bold mb-4">Account recognition within 30 seconds.</h2>
-            <ul class="list-disc list-inside">
-                <li class="text-gray-600">Within 30 seconds until full recognition;</li>
-                <li class="text-gray-600">Recognizes non-standard accounts;</li>
-                <li class="text-gray-600">Multiple accounts at once;</li>
-                <li class="text-gray-600">Self-improvement with continued use;</li>
-                <li class="text-gray-600">The account is automatically uploaded to storage.</li>
-            </ul>
-            <button class="bg-blue-500 text-white px-6 py-2 mt-4 rounded test-recognition">Test recognition</button>
-            <img src="assets/images/interface-example.jpg" alt="Interface example" class="mt-4 rounded mx-auto">
-        </section>
-        <section class="bg-white p-6 rounded shadow-md mb-8 text-center integration-block">
-            <h2 class="text-2xl font-bold mb-4">Wide integration options</h2>
-            <ul class="list-disc list-inside">
-                <li class="text-gray-600">Automatic import of bank statements;</li>
-                <li class="text-gray-600">API integration;</li>
-                <li class="text-gray-600">The most popular emails store plugins;</li>
-                <li class="text-gray-600">Synchronization with e-commerce portals;</li>
-                <li class="text-gray-600">Integrations with cash registers and POS systems.</li>
-            </ul>
-            <button class="bg-blue-500 text-white px-6 py-2 mt-4 rounded integrations-apis">Integrations and APIs</button>
-            <img src="assets/images/integration-logos.jpg" alt="Integration logos" class="mt-4 rounded mx-auto">
-        </section>
-        <section class="bg-white p-6 rounded shadow-md mb-8 text-center benefits-block">
-            <h2 class="text-2xl font-bold mb-4">Benefits</h2>
-            <ul class="list-disc list-inside">
-                <li class="text-gray-600">10,000+ companies use bconto - Secure and reliable accounting software</li>
-                <li class="text-gray-600">Teamwork - Effective work in one system</li>
-                <li class="text-gray-600">Works with all devices - Available on a smart device, TV, or PC</li>
-                <li class="text-gray-600">Easy choice - Companies providing accounting services</li>
-                <li class="text-gray-600">All accounting modules - From invoicing to balance sheeting</li>
-            </ul>
-        </section>
+        <div id="root"></div> <!-- Этот элемент необходим для React -->
     </main>
     <footer class="bg-gray-800 text-gray-200 p-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -129,8 +90,5 @@
     <script src="js/bank.js"></script>
     <script src="js/ledger.js"></script>
     <script src="js/warehouse.js"></script>
-</body>
-<body>
-    <div id="root"></div>
 </body>
 </html>
