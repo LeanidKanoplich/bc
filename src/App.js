@@ -11,7 +11,7 @@ function App() {
       <header className="bg-blue-500 text-white p-4">
         <h1 className="text-2xl">Welcome to bconto</h1>
         <nav>
-          <Link to="/">Haus</Link>
+          <Link to="/">Home</Link>
           <Link to="/dashboard">Dashboard</Link>
           <Link to="/login">Login</Link>
           <Link to="/register">Register</Link>
