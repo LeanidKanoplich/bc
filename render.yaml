@@ -3,7 +3,7 @@ services:
     name: bconto-tw-react
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: serve -s build
     plan: free
     envVars:
       - key: NODE_ENV
@@ -12,4 +12,4 @@ services:
     build:
       command: NODE_OPTIONS=--openssl-legacy-provider npm install && npm run build
     start:
-      command: npm start
+      command: serve -s build
