@@ -1,49 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Сохраненная страница с Tailwind CSS</title>
+    <!-- Tailwind CSS через CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Дополнительные стили, если нужно -->
+    <link href="../css/styles.css" rel="stylesheet">
+    <style>
+        /* Дополнительные кастомные стили, если нужно */
+    </style>
+    <!-- JavaScript для функциональности -->
+    <script src="../js/scripts.js" defer></script>
 </head>
-<body class="bg-gray-100 flex justify-start items-start min-h-screen p-8">
-    <div class="flex w-full">
-        <div class="accordion w-1/4 bg-white shadow-md rounded-lg overflow-hidden mr-8">
-            <div class="accordion-item border-b">
-                <div class="accordion-header p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
-                    <span>Clients</span>
-                    <span>-</span>
-                </div>
-                <div class="accordion-content">
-                    <div class="p-4">
-                        <ul id="client-list">
-                            <li class="flex justify-between items-center p-2 bg-gray-100 rounded mb-2 cursor-pointer" onclick="showClientDetails(this)" data-name="Client 1" data-code="12345" data-email="client1@example.com">
-                                <span>Client 1</span>
-                                <button class="text-red-500" onclick="removeClient(event, this)">x</button>
-                            </li>
-                            <li class="flex justify-between items-center p-2 bg-gray-100 rounded mb-2 cursor-pointer" onclick="showClientDetails(this)" data-name="Client 2" data-code="67890" data-email="client2@example.com">
-                                <span>Client 2</span>
-                                <button class="text-red-500" onclick="removeClient(event, this)">x</button>
-                            </li>
-                        </ul>
-                        <form id="add-client-form" class="mt-4">
-                            <input type="text" id="new-client" class="border p-2 w-full" placeholder="New Client Name" required>
-                            <button type="submit" class="mt-2 w-full bg-blue-500 text-white p-2 rounded">Add Client</button>
-                        </form>
-                    </div>
-                </div>
+<body class="bg-gray-100">
+    <div id="app" class="flex flex-col h-screen">
+        <!-- Верхний блок (header) -->
+        <div class="w-full bg-blue-800 text-white p-4 flex justify-between items-center">
+            <div class="text-lg font-bold">Панель управления</div>
+            <div>
+                <!-- Кнопки или другие элементы -->
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Кнопка 1</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">Кнопка 2</button>
             </div>
         </div>
-        <div class="w-3/4">
-            <div id="client-details" class="hidden bg-white shadow-md rounded-lg p-8">
-                <h2 class="text-xl font-bold mb-4" id="client-name"></h2>
-                <p><strong>Code:</strong> <span id="client-code"></span></p>
-                <p><strong>Email:</strong> <span id="client-email"></span></p>
-                <button class="mt-4 bg-green-500 text-white p-2 rounded" onclick="editClient()">Edit Client</button>
+        <!-- Основная область контента -->
+        <div class="flex flex-grow">
+            <!-- Боковая панель -->
+            <div class="w-1/5 bg-white shadow-md">
+                <ul>
+                    <li class="accordion-header p-4 border-b cursor-pointer">Клиенты</li>
+                    <div class="accordion-body p-4 hidden bg-blue-700 text-white">
+                        <!-- Контент аккордеона для Клиентов -->
+                        <p>Здесь находится детальный контент для раздела Клиенты. Он может включать ссылки, текст или любые другие HTML элементы.</p>
+                    </div>
+                    <!-- Другие элементы боковой панели -->
+                    <li class="p-2 hover:bg-blue-700 rounded">Склад</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Главная книга</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Банк</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Кассир</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Отчеты</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Персонал</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Справочник</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Производство</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Активы</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Документы</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Зарплата</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Декларация</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Настройки</li>
+                </ul>
+            </div>
+            <!-- Основной контент -->
+            <div class="flex-1 p-6 bg-white shadow-md hidden" id="main-content">
+                <!-- Динамически загружаемый контент будет отображаться здесь -->
             </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <!-- JavaScript для функциональности аккордеона -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const body = header.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    
+                    // Управление видимостью основного контента и установка контента
+                    const mainContent = document.getElementById('main-content');
+                    mainContent.classList.remove('hidden');
+                    mainContent.innerHTML = body.innerHTML;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
