@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохраненная страница с Tailwind CSS</title>
+    <!-- Tailwind CSS через CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Дополнительные стили, если нужно -->
+    <link href=".styles.css" rel="stylesheet">
+    <style>
+        /* Дополнительные кастомные стили, если нужно */
+    </style>
+    <!-- JavaScript для функциональности -->
+    <script src="./clients.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <div id="app" class="flex flex-col h-screen">
+        <!-- Верхний блок (header) -->
+        <div class="w-full bg-blue-800 text-white p-4 flex justify-between items-center">
+            <div class="text-lg font-bold">Панель управления</div>
+            <div>
+                <!-- Кнопки или другие элементы -->
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Кнопка 1</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">Кнопка 2</button>
+                <button onclick="window.location.href='./login.html'" class="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+            </div>
+        </div>
+        <!-- Основная область контента -->
+        <div class="flex flex-grow">
+            <!-- Боковая панель -->
+            <div class="w-1/5 bg-white shadow-md">
+                <ul>
+                    <li class="accordion-header p-4 border-b cursor-pointer">Клиенты</li>
+                    <div class="accordion-body p-4 hidden bg-blue-700 text-white">
+                        <!-- Контент аккордеона для Клиентов -->
+                        <p>Здесь находится детальный контент для раздела Клиенты. Он может включать ссылки, текст или любые другие HTML элементы.</p>
+                    </div>
+                    <!-- Другие элементы боковой панели -->
+                    <li class="p-2 hover:bg-blue-700 rounded">Склад</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Главная книга</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Банк</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Кассир</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Отчеты</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Персонал</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Справочник</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Производство</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Активы</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Документы</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Зарплата</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Декларация</li>
+                    <li class="p-2 hover:bg-blue-700 rounded">Настройки</li>
+                </ul>
+            </div>
+            <!-- Основной контент -->
+            <div class="flex-1 p-6 bg-white shadow-md hidden" id="main-content">
+                <!-- Динамически загружаемый контент будет отображаться здесь -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript для функциональности аккордеона -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const body = header.nextElementSibling;
+                    body.classList.toggle('hidden');
+                    
+                    // Управление видимостью основного контента и установка контента
+                    const mainContent = document.getElementById('main-content');
+                    mainContent.classList.remove('hidden');
+                    mainContent.innerHTML = body.innerHTML;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

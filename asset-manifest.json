@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bconto/static/css/main.cb7429b8.css",
+    "main.js": "/bconto/static/js/main.1da60919.js",
+    "index.html": "/bconto/index.html",
+    "main.cb7429b8.css.map": "/bconto/static/css/main.cb7429b8.css.map",
+    "main.1da60919.js.map": "/bconto/static/js/main.1da60919.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb7429b8.css",
+    "static/js/main.1da60919.js"
+  ]
+}
