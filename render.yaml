@@ -3,7 +3,7 @@ services:
     name: bconto-tw-react
     env: node
     buildCommand: npm install && npm run build
-    startCommand: serve -s build
+    startCommand: npm start
     plan: free
     envVars:
       - key: NODE_ENV
