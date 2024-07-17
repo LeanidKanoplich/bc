@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import Haus from './components/Haus';
-import Dashboard from './components/Dashboard';
-import Login from './components/Login';
-import Register from './components/Register';
+import Haus from './Haus';
+import Dashboard from './Dashboard';
+import Login from './Login';
+import Register from './Register';
 
 function App() {
   return (
