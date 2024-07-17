@@ -1,25 +1,28 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Dashboard from './components/Dashboard';
-import './App.css';
+import { Route, Routes, Link } from 'react-router-dom';
+import Home from './components/home';
+import Dashboard from './components/dashboard';
+import Login from './components/login';
+import Register from './components/register';
 
 function App() {
   return (
-    <div>
-      <header className="bg-gray-200 shadow p-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600">bconto</div>
+    <div className="App">
+      <header className="bg-blue-500 text-white p-4">
+        <h1 className="text-2xl">Welcome to bconto</h1>
         <nav>
-          <ul className="flex space-x-4">
-            <li><Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link></li>
-            <li><Link to="/dashboard" className="text-gray-700 hover:text-blue-600">Dashboard</Link></li>
-          </ul>
+          <Link to="/">Home</Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/register">Register</Link>
         </nav>
       </header>
       <main className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </main>
     </div>
