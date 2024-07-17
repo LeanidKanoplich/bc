@@ -9,7 +9,3 @@ services:
       - key: NODE_ENV
         value: production
     runtime: node 16.20.2
-    build:
-      command: NODE_OPTIONS=--openssl-legacy-provider npm install && npm run build
-    start:
-      command: serve -s build
